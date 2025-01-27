@@ -52,5 +52,18 @@ I chose simple state management over more complex solutions for ease of use and 
    npm install
 
 ----
+### Project Structure
 
+medimagex/
+├── src/
+│   ├── components/        # React components
+│   │   ├── ui/           # Reusable UI components (e.g., buttons, modals)
+│   │   └── viewer/       # Image viewer components
+│   ├── hooks/            # Custom React hooks
+│   ├── store/            # Zustand store configuration
+│   ├── types/            # TypeScript type definitions
+│   └── utils/            # Utility functions (e.g., image processing)
+├── public/               # Static assets (e.g., icons, images)
+└── docker/               # Docker configuration files
 
+------
