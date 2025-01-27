@@ -1,0 +1,100 @@
+/* Light Theme */
+.light-theme {
+  --background-color: white;
+  --canvas-background-color: #f5f5f5; /* Lighter background for canvas area */
+  --border-color: #ddd;
+  --button-bg: transparent;
+  --button-text: black;
+  --button-border: black;
+}
+
+/* Dark Theme */
+.dark-theme {
+  --background-color: #121212;
+  --canvas-background-color: #2c2c2c; /* Darker background for canvas area */
+  --border-color: #444;
+  --button-bg: transparent;
+  --button-text: white;
+  --button-border: white;
+}
+
+/* Global Styles - Using custom properties (CSS variables) for easier theme switching */
+body {
+  background-color: var(--background-color);
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  min-height: 100vh;  /* Ensure body takes the full height of the viewport */
+  margin: 0;  /* Remove any default margin */
+}
+
+.file-upload-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--background-color); /* Background for the entire page */
+}
+
+.canvas-container {
+  position: relative;
+  width: 80vw;  /* Use a percentage of the viewport width */
+  height: 60vh; /* Use a percentage of the viewport height */
+  max-width: 800px;  /* Optional: max width for the rectangle */
+  max-height: 600px; /* Optional: max height for the rectangle */
+  margin: auto;
+  background-color: var(--canvas-background-color); /* Background for the canvas area */
+  border: 2px solid var(--border-color); /* Outline around the rectangle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+/* Style the canvas */
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Image preview should fit inside the fixed container */
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Maintain aspect ratio */
+}
+
+/* Button container for the right side of the screen */
+.button-container {
+  position: absolute;
+  top: 10px;  /* Position buttons 10px from the top of the container */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Button styles */
+button {
+  padding: 10px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: var(--button-bg); /* Use background variable */
+  color: var(--button-text); /* Use text color variable */
+  border: 2px solid var(--button-border); /* Use border color variable */
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  min-width: 140px;
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #f0f0f0, #d9d9d9); /* Grey gradient on hover */
+}
