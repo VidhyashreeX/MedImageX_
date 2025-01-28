@@ -67,3 +67,19 @@ medimagex/
 └── docker/               # Docker configuration files
 
 ------
+
+## Screenshots
+
+1. **Main Image Viewer Interface**  
+
+2. **Image Annotation Tools**  
+
+3. **Dark Mode Appearance**  
+
+4. **Responsive Design on Desktop**  
+<img width="1440" alt="2 10 2025-01-28 at 10 26 33 AM" src="https://github.com/user-attachments/assets/0314a281-75b1-482f-8620-7834841d9b22" />
+<img width="1440" alt="2 10 2025-01-28 at 10 25 53 AM" src="https://github.com/user-attachments/assets/a901783b-ad92-4389-a382-04b05eefe5c1" />
+<img width="1440" alt="2 10 2025-01-28 at 10 25 21 AM" src="https://github.com/user-attachments/assets/7870da28-8dad-4e98-967f-613c03107068" />
+<img width="1440" alt="2 10 2025-01-28 at 10 24 51 AM" src="https://github.com/user-attachments/assets/74afe564-3396-4b5c-af34-d8b4db74e969" />
+
+
